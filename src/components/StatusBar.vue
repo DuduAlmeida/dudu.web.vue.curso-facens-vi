@@ -21,9 +21,15 @@ export default {
     timeFormatted: '',
   }),
   methods: {
+    momentToString: (moment) => {
+      if (`${moment}`.length == 2)
+        return '' + moment;
+
+      return '0' + moment;
+    }
   },
   mounted() {
-    this.timeFormatted = `${this.time.getHours()}:${this.time.getMinutes()}`;
+    this.timeFormatted = `${this.momentToString(this.time.getHours())}:${this.momentToString(this.time.getMinutes())}`;
   }
 }
 </script>
