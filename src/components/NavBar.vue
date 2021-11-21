@@ -115,5 +115,9 @@ export default {
   .vb.vb-dragging-phantom > .vb-dragger > .vb-dragger-styler {
     background-color: rgba(48, 121, 244, 0.5);
   }
+
+  header.v-toolbar{
+    top: 30px;
+  }
 }
 </style>
