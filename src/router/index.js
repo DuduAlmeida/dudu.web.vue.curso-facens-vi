@@ -8,29 +8,23 @@ const routes = [
     path: '/',
     name: 'Home',
     components: {
-      default: () => import(/* webpackChunkName: "about" */ '../views/Home.vue')
+      default: () => import(/* webpackChunkName: "home" */ '../views/Home.vue')
     }
   },
   {
     path: '/about',
     name: 'About',
-    component: {
-      default: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
     path: '/listpokemon',
     name: 'ListPokemon',
-    component: {
-      default: () => import(/* webpackChunkName: "about" */ '../views/ListPokemon.vue')
-    }
+    component: () => import(/* webpackChunkName: "listpokemon" */ '../views/ListPokemon.vue')
   },
   {
     path: '/pokemon',
     name: 'Pokemon',
-    component: {
-      default: () => import(/* webpackChunkName: "about" */ '../views/Pokemon.vue')
-    }
+    component: () => import(/* webpackChunkName: "pokemon" */ '../views/Pokemon.vue')
   }
 ]
 
