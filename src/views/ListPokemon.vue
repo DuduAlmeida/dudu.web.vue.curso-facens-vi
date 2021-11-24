@@ -1,7 +1,7 @@
 <template>
-  <div id="home" class="pa-4">
+  <div id="list-pokemon" class="pa-4">
     <v-container fluid>
-      <h3 class="headline font-weight-medium">Listagem Pokémons (MOCKUP):</h3>
+      <h3 class="headline font-weight-medium">Listagem Pokémons (STORE):</h3>
       <v-row>
         <v-col
           cols="12"
@@ -25,7 +25,7 @@
 import pokemonCard from '@/components/PokemonCard'
 
 export default {
-  name: 'Home',
+  name: 'ListPokemon',
   data: () => ({
     loading: true,    
   }),

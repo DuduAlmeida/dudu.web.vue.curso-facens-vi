@@ -32,6 +32,19 @@
             ></v-app-bar-nav-icon>
             <v-toolbar-title class="font-weight-bold">FACENS</v-toolbar-title>
           </v-list-item>
+
+          <span v-for="link in links" :key="link.text" class="link-nav">
+            <span v-if="link.text === 'Terms'" class="mb-2 d-block"> </span>
+            <v-btn
+              href
+              router
+              :to="link.link"
+              text
+              class="text-capitalize px-1"
+              small
+              >{{ link.text }}</v-btn
+            >
+          </span>
         </v-list>
       </div>
     </v-navigation-drawer>
@@ -42,6 +55,12 @@
 export default {
   data: () => ({
     drawer: false,
+    links: [
+      { text: 'Home', link: '/' },
+      { text: 'About', link: '/about' },
+      { text: 'Pokemon', link: '/pokemon' },
+      { text: 'ListPokemon', link: '/list-pokemon' },
+    ],
   }),
   methods: {
   },
@@ -118,6 +137,32 @@ export default {
 
   header.v-toolbar{
     top: 30px;
+  }
+
+  span.link-nav{
+    color: #333;
+    width: 100%;
+    display: block;
+
+    &:first-of-type{
+      margin-top: 2rem;
+
+    }
+    a{
+      width: 100%;
+    }
+
+    .v-btn__content{
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
   }
 }
 </style>
