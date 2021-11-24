@@ -59,7 +59,7 @@ export default {
       { text: 'Home', link: '/' },
       { text: 'About', link: '/about' },
       { text: 'Pokemon', link: '/pokemon' },
-      { text: 'ListPokemon', link: '/list-pokemon' },
+      { text: 'ListPokemon', link: '/listpokemon' },
     ],
   }),
   methods: {

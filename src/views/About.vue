@@ -1,6 +1,8 @@
 <template>
   <div id="about" class="pa-4">
-  Opa
+    <v-container fluid class="pt-0 pb-0 fill-height">
+      Opa
+    </v-container>
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <div id="list-pokemon" class="pa-4">
+  <div id="listpokemon" class="pa-4">
     <v-container fluid>
       <h3 class="headline font-weight-medium">Listagem Pokémons (STORE):</h3>
       <v-row>
