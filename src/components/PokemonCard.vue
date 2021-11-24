@@ -1,10 +1,10 @@
 
 <template>
-  <div class="pkm-card" pkm-name="PIKACHU">
+  <v-card class="pkm-card" pkm-name="PIKACHU">
     <div class="pkm-card__image">
       <img src="../assets/pikachu.png" alt="Foto do Pikachu">
     </div>
-  </div>
+  </v-card>
 </template>
 
 <script>
