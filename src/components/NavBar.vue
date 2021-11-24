@@ -8,7 +8,7 @@
         ></v-toolbar-title
       >
       <v-spacer></v-spacer>
-      
+      Eduardo Almeida | 190963
     </v-app-bar>
 
     <v-navigation-drawer
