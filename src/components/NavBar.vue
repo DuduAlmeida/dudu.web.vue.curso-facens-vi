@@ -8,8 +8,7 @@
         ></v-toolbar-title
       >
       <v-spacer></v-spacer>
-      Eduardo de Oliveira Almeida | 190963
-      <v-spacer></v-spacer>
+      
     </v-app-bar>
 
     <v-navigation-drawer
@@ -33,8 +32,9 @@
             <v-toolbar-title class="font-weight-bold">FACENS</v-toolbar-title>
           </v-list-item>
 
+          <span class="mb-2 d-block link-nav-title">Páginas disponíveis</span>
+
           <span v-for="link in links" :key="link.text" class="link-nav">
-            <span v-if="link.text === 'Terms'" class="mb-2 d-block"> </span>
             <v-btn
               href
               router
@@ -144,8 +144,12 @@ export default {
     width: 100%;
     display: block;
 
+    &-title{
+        font-size: 1.3rem;
+        margin: 2rem 0 0.5rem;
+    }
+
     &:first-of-type{
-      margin-top: 2rem;
 
     }
     a{
