@@ -25,7 +25,6 @@
 import pokemonCard from '@/components/PokemonCard'
 
 export default {
-  name: 'ListPokemon',
   data: () => ({
     loading: true,    
   }),

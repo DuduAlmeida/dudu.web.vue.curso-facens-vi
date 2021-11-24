@@ -1,9 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import NavBar from '@/components/NavBar.vue'
-import Footer from '@/components/Footer.vue'
-import StatusBar from '@/components/StatusBar.vue'
-import BottomNavBar from '@/components/BottomNavBar.vue'
 
 Vue.use(VueRouter)
 
@@ -12,10 +8,6 @@ const routes = [
     path: '/',
     name: 'Home',
     components: {
-      NavBar,
-      Footer,
-      BottomNavBar,
-      StatusBar,
       default: () => import(/* webpackChunkName: "about" */ '../views/Home.vue')
     }
   },
@@ -23,10 +15,6 @@ const routes = [
     path: '/about',
     name: 'About',
     component: {
-      // NavBar,
-      // Footer,
-      // StatusBar,
-      // BottomNavBar,
       default: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
     }
   },
@@ -34,10 +22,6 @@ const routes = [
     path: '/listpokemon',
     name: 'ListPokemon',
     component: {
-      // NavBar,
-      // Footer,
-      // StatusBar,
-      // BottomNavBar,
       default: () => import(/* webpackChunkName: "about" */ '../views/ListPokemon.vue')
     }
   },
@@ -45,10 +29,6 @@ const routes = [
     path: '/pokemon',
     name: 'Pokemon',
     component: {
-      // NavBar,
-      // Footer,
-      // StatusBar,
-      // BottomNavBar,
       default: () => import(/* webpackChunkName: "about" */ '../views/Pokemon.vue')
     }
   }

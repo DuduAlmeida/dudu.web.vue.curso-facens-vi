@@ -1,7 +1,7 @@
 <template>
   <v-app>
-    <router-view name="StatusBar"></router-view>
-    <router-view name="NavBar"></router-view>
+    <StatusBar></StatusBar>
+    <NavBar></NavBar>
     <v-content
       :class="{
         'content-bg': true
@@ -9,14 +9,25 @@
     >
       <router-view></router-view>
     </v-content>
-    <router-view name="Footer"></router-view>
-    <router-view name="BottomNavBar"></router-view>
+    <Footer></Footer>
+    <BottomNavBar></BottomNavBar>
   </v-app>
 </template>
 
 <script>
+import NavBar from '@/components/NavBar.vue'
+import Footer from '@/components/Footer.vue'
+import StatusBar from '@/components/StatusBar.vue'
+import BottomNavBar from '@/components/BottomNavBar.vue'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+      NavBar,
+      Footer,
+      BottomNavBar,
+      StatusBar,
+  },
 }
 </script>
 
