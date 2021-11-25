@@ -46,6 +46,11 @@ export default new Vuex.Store({
         name:"wartortle",
         imageSrc: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
       },
+      {
+        id: 9,
+        name:"blastoise",
+        imageSrc: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+      },
     ]
   },
   mutations: {

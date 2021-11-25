@@ -8,12 +8,12 @@
           sm="6"
           md="4"
           lg="3"
-          v-for="i in loading ? 4 : 8"
+          v-for="i in loading ? 4 : listPokemon.length"
           :key="i"
           class="mx-xs-auto"
         >
           <v-skeleton-loader type="card-avatar" :loading="loading">
-            <pokemonCard></pokemonCard>
+            <pokemonCard :pokemon="listPokemon[i]"></pokemonCard>
           </v-skeleton-loader>
         </v-col>
       </v-row>
@@ -22,6 +22,7 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import pokemonCard from '@/components/PokemonCard'
 
 export default {
@@ -31,10 +32,11 @@ export default {
   components: {
     pokemonCard,
   },
+  computed: mapState(['listPokemon']),
   mounted() {
     setTimeout(() => {
       this.loading = false
-    }, 3000)
+    }, 5000)
   }
 }
 </script>

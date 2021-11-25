@@ -2,17 +2,14 @@
 <template>
   <v-card class="pkm-card" pkm-name="PIKACHU">
     <div class="pkm-card__image">
-      <img v-if="!pokemon" src="../assets/pikachu.png" alt="Pokémon">
-      <img v-if="!!pokemon" :src="pokemon.pokemon.$attrs.pokemon.imageSrc" alt="Pokémon">
-      <div v-if="!!pokemon" class="pkm-card__name">{{pokemon.pokemon.$attrs.pokemon.name}}</div>
+      <img src="../assets/pikachu.png" alt="Pokémon">
     </div>
   </v-card>
 </template>
 
 <script>
 export default {
-  data: (pokemon) => ({
-    pokemon: pokemon,
+  data: () => ({
   }),
   methods: {
   },

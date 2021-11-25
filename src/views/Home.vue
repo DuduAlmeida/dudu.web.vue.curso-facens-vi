@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import pokemonCard from '@/components/PokemonCard'
+import pokemonCard from '@/components/PokemonCardMocked'
 
 export default {
   name: 'Home',
