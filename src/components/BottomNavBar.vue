@@ -3,20 +3,42 @@
     :value="value"
     color="primary"
   >
-    <v-btn>
-      <span>Primeiro</span>
+    <v-btn
+      href
+      router
+      to="/"
+    >
+      <span>HOME</span>
 
       <v-icon>mdi-arrow-up-bold-box-outline</v-icon>
     </v-btn>
 
-    <v-btn>
-      <span>Segundo</span>
+    <v-btn
+      href
+      router
+      to="/about"
+    >
+      <span>About</span>
 
       <v-icon>mdi-arrow-up-bold-box-outline</v-icon>
     </v-btn>
 
-    <v-btn>
-      <span>Terceiro</span>
+    <v-btn
+      href
+      router
+      to="/pokemon"
+    >
+      <span>Pokemon</span>
+
+      <v-icon>mdi-arrow-up-bold-box-outline</v-icon>
+    </v-btn>
+
+    <v-btn
+      href
+      router
+      to="/listpokemon"
+    >
+      <span>ListPokemon</span>
 
       <v-icon>mdi-arrow-up-bold-box-outline</v-icon>
     </v-btn>
