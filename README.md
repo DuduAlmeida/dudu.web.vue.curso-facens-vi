@@ -30,8 +30,19 @@ npm run lint
 
 ### Carregando Pokémon
 
-![Screenshot](Screenshots/Loading.png)
+![Screenshot](Screenshots/LoadingAF2.png)
 
-### Pokémons Carregados
+### Home
 
-![Screenshot](Screenshots/Home.png)
+![Screenshot](Screenshots/HomeAF2.png)
+
+### About
+
+![Screenshot](Screenshots/AboutAF2.png)
+### Pokémon
+
+![Screenshot](Screenshots/PokemonAF2.png)
+
+### Listar Pokémons
+
+![Screenshot](Screenshots/ListarPokemon.png)
