@@ -22,18 +22,29 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 import pokemonCard from '@/components/PokemonCard'
 
 export default {
   data: () => ({
-    loading: true,    
+    loading: true,
+    countPokemonsToAddFromAPI: 20,
   }),
   components: {
     pokemonCard,
   },
   computed: mapState(['listPokemon']),
+  methods: {
+    ...mapActions(['addRandomPokemon']),
+  },
   mounted() {
+    let i = 0;
+
+    while(i < this.countPokemonsToAddFromAPI){
+      this.addRandomPokemon();
+      i += 1;
+    }
+
     setTimeout(() => {
       this.loading = false
     }, 5000)
