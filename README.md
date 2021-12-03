@@ -43,6 +43,6 @@ npm run lint
 
 ![Screenshot](Screenshots/PokemonAF2.png)
 
-### Listar Pokémons
+### Listar Pokémons (EVENTOS VUEX)
 
 ![Screenshot](Screenshots/ListarPokemon.png)
